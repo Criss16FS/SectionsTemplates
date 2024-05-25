@@ -81,22 +81,35 @@ a:hover {
 /* ----- Main ----- */
 
 .container {
-    width: min(90%, 120rem);
-    height: 95vh;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    margin-bottom: 10rem;
 }
 
 .content {
-    width: 75rem;
-    height: 50rem;
-    display: grid;
-    grid-template-columns: 45% 55%;
-
+    height: 100%;
     box-shadow: 10px 10px 40px 1px rgba(200, 199, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: min(90%, 120rem);
+        height: 95vh;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 75rem;
+        height: 50rem;
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        box-shadow: 10px 10px 40px 1px rgba(200, 199, 255, 0.5);
+    }
 }
 
 .left {
@@ -106,10 +119,17 @@ a:hover {
     flex-direction: column;
     gap: 2rem;
 
-    border-radius: 3rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     padding: 3rem;
     color: var(--White);
     background-image: linear-gradient(var(--Lightslateblue) 10%, var(--Lightroyalblue) 90%);
+}
+
+@media (min-width:768px) {
+    .left {
+        border-radius: 3rem;
+    }
 }
 
 
@@ -226,7 +246,7 @@ a:hover {
 }
 
 .point__attribute {
-font-weight: 700;
+    font-weight: 700;
 }
 
 .point__attribute--span {
@@ -254,7 +274,7 @@ font-weight: 700;
 
 
 .boton {
-    display: inline-block;
+    display: block;
     color: var(--White);
     background-color: var(--Darkgrayblue);
     font-size: 2rem;
@@ -262,16 +282,25 @@ font-weight: 700;
     border-radius: 3rem;
     width: 85%;
     text-align: center;
+    margin-bottom: 2rem;
+    border: none;
 
+}
+
+.boton:hover {
+    background-image: linear-gradient(var(--Lightslateblue) 10%, var(--Lightroyalblue) 90%);
 }
 
 /* ---- Footer ----- */
 
-.footer {
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (min-width: 768px) {
+    .footer {
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .footer__txt {
