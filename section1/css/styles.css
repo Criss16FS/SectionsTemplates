@@ -1,0 +1,76 @@
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+
+    /*Gradients*/
+    /*(background)*/
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    /*(circle)*/
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    /* fonts */
+    --font: "Hanken Grotesk", sans-serif;
+}
+
+/*hacks y globales*/
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /*Hack para box model*/
+}
+
+body {
+    font-family: var(--font);
+}
+
+img {
+    width: 100%;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* ----- Main ----- */
+
