@@ -1,14 +1,15 @@
 :root {
-    --Lightred: hsl(0, 100%, 67%);
-    --Orangeyyellow: hsl(39, 100%, 56%);
-    --Greenteal: hsl(166, 100%, 37%);
-    --Cobaltblue: hsl(234, 85%, 45%);
+    --Lightred: rgb(255, 87, 87);
+    --Orangeyyellow: rgb(255, 176, 31);
+    --Greenteal: rgb(0, 189, 145);
+    --Cobaltblue: rgb(17, 37, 212);
 
 
     /*Gradients*/
     /*(background)*/
     --Lightslateblue: hsl(252, 100%, 67%);
     --Lightroyalblue: hsl(241, 81%, 54%);
+
     /*(circle)*/
     --Violetblue: hsla(256, 72%, 46%, 1);
     --Persianblue: hsla(241, 72%, 46%, 0);
@@ -40,6 +41,7 @@ html {
 body {
     font-family: var(--font);
     margin: 0;
+    background-color: var(--White);
 }
 
 img {
@@ -61,6 +63,8 @@ h3 {
     font-weight: 500;
 }
 
+
+h4,
 p {
     font-size: 1.8rem;
     font-weight: 400;
@@ -72,13 +76,6 @@ a {
 
 a:hover {
     cursor: pointer;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
 }
 
 /* ----- Main ----- */
@@ -94,31 +91,200 @@ a:hover {
 }
 
 .content {
-    width: 80rem;
+    width: 75rem;
     height: 50rem;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
+
+    box-shadow: 10px 10px 40px 1px rgba(200, 199, 255, 0.5);
 }
 
 .left {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
 
     border-radius: 3rem;
     padding: 3rem;
     color: var(--White);
-    background-image: linear-gradient(var(--Lightslateblue) 0%, var(--Lightroyalblue) 100%);
+    background-image: linear-gradient(var(--Lightslateblue) 10%, var(--Lightroyalblue) 90%);
 }
+
+
+.title {
+    color: var(--Lightlavender);
+}
+
+.progress {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 4rem;
+    background-image: linear-gradient(var(--Violetblue) 5%, var(--Persianblue) 90%);
+}
+
+.progress__title {
+    font-size: 7rem;
+    line-height: .5;
+    text-align: center;
+}
+
+.progress__span {
+    color: var(--Lightlavender);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.great__title {
+    text-align: center;
+}
+
+.great__txt {
+    color: var(--Lightlavender);
+    text-align: center;
+}
+
+/* Rigth */
 
 .rigth {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
 
     border-radius: 3rem;
-    padding: 3rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 2rem;
+    background: var(--White);
+
 }
 
+.summary {
+    color: var(--Darkgrayblue);
+    font-weight: 800;
+    text-align: left;
+    width: 100%;
+}
+
+
+.container__attributes {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.attribute {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.icon-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.icon__attribute {
+    width: 2rem;
+    height: 2rem;
+}
+
+.name__attribute {
+    font-weight: 700;
+}
+
+.name__attribute--reaction {
+    color: var(--Lightred);
+}
+
+.name__attribute--memory {
+    color: var(--Orangeyyellow);
+}
+
+.name__attribute--verbal {
+    color: var(--Greenteal);
+}
+
+.name__attribute--visual {
+    color: var(--Cobaltblue);
+}
+
+.point__attribute {
+font-weight: 700;
+}
+
+.point__attribute--span {
+    color: var(--Lightlavender);
+}
+
+
+
+
+.attribute-reaction {
+    background-color: rgba(255, 87, 87, .15);
+}
+
+.attribute-memory {
+    background-color: rgb(255, 176, 31, .15);
+}
+
+.attribute-verbal {
+    background-color: rgb(0, 189, 145, .15);
+}
+
+.attribute-visual {
+    background-color: rgb(17, 37, 212, .15);
+}
+
+
+.boton {
+    display: inline-block;
+    color: var(--White);
+    background-color: var(--Darkgrayblue);
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    width: 85%;
+    text-align: center;
+
+}
+
+/* ---- Footer ----- */
+
+.footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__txt {
+    color: var(--Darkgrayblue);
+}
+
+
+.link {
+    font-weight: 800;
+    font-style: italic;
+    color: var(--Darkgrayblue);
+}
+
+.link:hover {
+    color: var(--Orangeyyellow);
+}
