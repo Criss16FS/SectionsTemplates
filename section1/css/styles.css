@@ -79,7 +79,6 @@ a:hover {
 }
 
 /* ----- Main ----- */
-
 .container {
     height: 100vh;
     margin-bottom: 10rem;
@@ -131,7 +130,6 @@ a:hover {
         border-radius: 3rem;
     }
 }
-
 
 .title {
     color: var(--Lightlavender);
@@ -253,9 +251,6 @@ a:hover {
     color: var(--Lightlavender);
 }
 
-
-
-
 .attribute-reaction {
     background-color: rgba(255, 87, 87, .15);
 }
@@ -271,7 +266,6 @@ a:hover {
 .attribute-visual {
     background-color: rgb(17, 37, 212, .15);
 }
-
 
 .boton {
     display: block;
@@ -292,8 +286,6 @@ a:hover {
 }
 
 /* ---- Footer ----- */
-
-
 @media (min-width: 768px) {
     .footer {
         height: 5vh;
@@ -306,7 +298,6 @@ a:hover {
 .footer__txt {
     color: var(--Darkgrayblue);
 }
-
 
 .link {
     font-weight: 800;
